@@ -43,25 +43,16 @@ ul {
 
 .messages {
   font-size: 150%;
-}
-
-.messages {
   height: 100%;
   overflow-y: scroll;
   padding: 10px 20px 10px 20px;
 }
 
+.message {
+  padding: 10px 0;
+}
+
 .message.me {
-  text-align: right;
-}
-
-.message.typing .messageBody {
-  color: gray;
-}
-
-.username {
-  font-weight: 700;
-  overflow: hidden;
   text-align: right;
 }
 
@@ -79,7 +70,7 @@ ul {
   align-items: center;
 }
 
-.inputName {
+#inputUser {
   outline: none;
   padding-left: 10px;
   font-size: 100%;
@@ -89,7 +80,7 @@ ul {
   flex: 1;
 }
 
-.inputMessage {
+#inputMessage {
   outline: none;
   padding-left: 10px;
   font-size: 100%;
@@ -100,12 +91,12 @@ ul {
   margin: 0 20px;
 }
 
-.inputMessage:focus,
-.inputName:focus {
+#inputMessage:focus,
+#inputUser:focus {
   border-color: #aaa;
 }
 
-.sendBtn {
+#sendBtn {
   border: 1px solid #000;
   border-radius: 0;
   height: 28px;
@@ -116,11 +107,11 @@ ul {
   background-color: #fff;
 }
 
-.sendBtn:hover {
+#sendBtn:hover {
   opacity: 0.85;
 }
 
-.sendBtn:focus {
+#sendBtn:focus {
   outline: 0 none;
   border-color: #aaa;
 }

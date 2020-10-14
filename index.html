@@ -9,38 +9,35 @@
 
   <div class="container">
     <div class="chat">
-      <ul class="messages">
-        <li class="message me">
-          <span class="messageBody">Hello</span>
-        </li> 
-        <li class="message">
-          <span class="username">ChatBot2020</span>:
-          <span class="messageBody">Hello My dear friend jkadjkfhkjsd fkjds fk sdkf sdkh fdskj fkj krhw rkjwe rkew khr wehrwekhr ehkwr kwehkw rwekr kwherbkhwe rhwe rwek rrwekh rkhew rkhwe </span>
-        </li>
-      </ul>
+      <ul class="messages"></ul>
     </div>
     <div class="bottomNav">
       <input 
         type="text" 
-        class="inputName" 
-        placeholder="Guest" 
-        value="" />
+        id="inputUser"
+        name="inputUser"
+        tabindex="1"
+        placeholder="Type your name..." />
       <input 
         type="text" 
-        class="inputMessage" 
+        id="inputMessage"
+        name="inputMessage"
         placeholder="Type here to chat..." 
-        value="" 
         autofocus 
-        tabindex="1" />
+        tabindex="2" />
       <button 
         type="submit" 
-        class="sendBtn" 
-        tabindex="2">Send</button>
+        id="sendBtn" 
+        tabindex="3">Send</button>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
-  <script type="module" src="modules/providers/socket.provider.mjs"></script>
+  <script src="modules/utils/create-element.js"></script>
+  <script src="modules/utils/pub-sub.js"></script>
+  <script src="modules/services/message-element-builder.service.js"></script>
+  <script src="modules/services/template.service.js"></script>
+  <script src="modules/adapters/socket.adapter.js"></script>
   <script src="index.js"></script>
 
 </body>
